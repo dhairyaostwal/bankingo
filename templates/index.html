@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="./../static/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Bank Note Auth</title>
+</head>
+
+<body>
+    <div class="container">
+        <div style="background: linear-gradient(to right, red, purple);
+        padding: .25em .25em;">
+            <form action="{{ url_for("hello")}}" method="POST" class="form-design">
+                <label class="form-label">Variance</label>
+                <input type="number" class="form-control" name="variance">
+
+                <label class="form-label">Skewness</label>
+                <input type="number" class="form-control" name="skewness">
+
+                <label class="form-label">Curtosis</label>
+                <input type="number" class="form-control" name="curtosis">
+
+                <label class="form-label">Entropy</label>
+                <input type="number" class="form-control" name="entropy">
+                <br>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Check Authenticity</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">Made with ❤️</footer>
+
+</body>
+
+</html>
