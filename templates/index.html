@@ -18,16 +18,16 @@
         padding: .25em .25em;">
             <form action="{{ url_for("hello")}}" method="POST" class="form-design">
                 <label class="form-label">Variance</label>
-                <input type="number" class="form-control" name="variance">
+                <input type="number" placeholder="1.0" step="0.00001" min="-999" class="form-control" name="variance">
 
                 <label class="form-label">Skewness</label>
-                <input type="number" class="form-control" name="skewness">
+                <input type="number" placeholder="1.0" step="0.00001" min="-999" class="form-control" name="skewness">
 
                 <label class="form-label">Curtosis</label>
-                <input type="number" class="form-control" name="curtosis">
+                <input type="number" placeholder="1.0" step="0.00001" min="-999" class="form-control" name="curtosis">
 
                 <label class="form-label">Entropy</label>
-                <input type="number" class="form-control" name="entropy">
+                <input type="number" placeholder="1.0" step="0.00001" min="-999" class="form-control" name="entropy">
                 <br>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Check Authenticity</a>
@@ -35,7 +35,7 @@
             </form>
         </div>
     </div>
-    <footer class="footer">Made with ❤️</footer>
+    <footer class="footer">Made with ❤️ by Dhairya Ostwal</footer>
 
 </body>
 
